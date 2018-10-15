@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"timer configuration\system_stm32f1xx.o"
+"timer configuration\stm32f1xx_hal_msp.o"
+"timer configuration\main.o"
+"timer configuration\stm32f1xx_it.o"
+"timer configuration\startup_stm32f103xb.o"
+"timer configuration\stm32f1xx_hal_pwr.o"
+"timer configuration\stm32f1xx_hal_gpio.o"
+"timer configuration\stm32f1xx_hal_flash_ex.o"
+"timer configuration\stm32f1xx_hal_cortex.o"
+"timer configuration\stm32f1xx_hal_rcc_ex.o"
+"timer configuration\stm32f1xx_hal_gpio_ex.o"
+"timer configuration\stm32f1xx_hal_rcc.o"
+"timer configuration\stm32f1xx_hal_dma.o"
+"timer configuration\stm32f1xx_hal_uart.o"
+"timer configuration\stm32f1xx_hal_flash.o"
+"timer configuration\stm32f1xx_hal.o"
+--strict --scatter "timer Configuration\timer Configuration.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "timer Configuration.map" -o "timer Configuration\timer Configuration.axf"

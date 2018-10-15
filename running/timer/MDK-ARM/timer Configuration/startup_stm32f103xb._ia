@@ -1,0 +1,5 @@
+--cpu Cortex-M3 -g --apcs=interwork 
+-I D:\Keil5\core\ARM\RV31\INC
+-I D:\Keil5\core\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+
+--list startup_stm32f103xb.lst --xref -o "timer configuration\startup_stm32f103xb.o" --depend "timer configuration\startup_stm32f103xb.d" "..\Drivers\CMSIS\Device\ST\STM32F1xx\Source\Templates\arm\startup_stm32f103xb.s"

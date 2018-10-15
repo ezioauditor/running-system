@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\Inc -I..\Drivers\STM32F1xx_HAL_Driver\Inc -I..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy -I..\Drivers\CMSIS\Include -I..\Drivers\CMSIS\Device\ST\STM32F1xx\Include --C99
+-I D:\Keil5\core\ARM\RV31\INC
+-I D:\Keil5\core\ARM\PACK\ARM\CMSIS\4.1.0\CMSIS\Include
+-DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB
+-o "timer configuration\stm32f1xx_hal_dma.o" --omf_browse "timer configuration\stm32f1xx_hal_dma.crf" --depend "timer configuration\stm32f1xx_hal_dma.d" "..\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c"
